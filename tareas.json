@@ -1,0 +1,16 @@
+[{
+        "titulo": "Hacer calculadora",
+        "estado": "Terminada"
+    },
+
+    {
+        "titulo": "Armar aplicación de tareas",
+        "estado": "En progreso"
+    },
+    {
+
+        "titulo": "Estudiar el próximo módulo",
+        "estado": "Pendiente"
+    }
+
+]
