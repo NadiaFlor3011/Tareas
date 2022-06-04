@@ -3,10 +3,10 @@ const fs = require('fs');
 const archivoTareas = JSON.parse(fs.readFileSync('./tareas.json', 'utf-8'))
 
 module.exports = {
-    leerArchivo: function() {
-        return archivoTareas;
+    leerArchivo: () => {
+        archivoTareas;
     },
-    listar: function() {
+    listar: () => {
 
         tareas.forEach((tarea, index) => {
             console.log(`(${index + 1}). ${tarea.titulo} - ${tarea.estado}`)
@@ -15,7 +15,7 @@ module.exports = {
 
 
     },
-    sinTexto: function() {
+    sinTexto: () => {
         console.log(`
         -------------------------------------
         Atención-Tienes que pasar una acción.
@@ -23,16 +23,20 @@ module.exports = {
         -------------------------------------
         `);
     },
-    cualquierTexto: function() {
+    cualquierTexto: () => {
         console.log(`
         ---------------------------------------
         No entiendo qué quieres hacer.
          Las acciones disponibles son : Listar
         ---------------------------------------`);
     },
-    escribirJSON: function(array) {
-        return JSON.stringify(fs.writeFileSync('./tareas.jason'))
+    escribirJson: function(tarea) {
+        archivoTareas.push(tarea);
 
-
+        fs.writeFileSync('./tareas.json', JSON.stringify(archivoTareas, null, 3));
     }
+
+
+
+
 }
