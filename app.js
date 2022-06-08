@@ -4,7 +4,8 @@ const funciones = require('./funcionesDeTareas');
 
 const acciones = process.argv[2];
 const titulo = process.argv[3];
-const estado = process.argv[4];
+
+
 
 switch (acciones) {
     case "listar":
@@ -13,14 +14,17 @@ switch (acciones) {
     case undefined:
         funciones.sinTexto();
         break;
+    case "crear":
+        let nuevaTarea = {
+            titulo,
+            estado: 'pendiente'
+        };
+        funciones.escribirJSON(nuevaTarea);
+        funciones.guardarTarea(nuevaTarea);
+        break;
+
     default:
         funciones.cualquierTexto();
         break;
-    case "Crear":
-        let nuevaTarea = archivoTareas.push({
-            titulo,
-            estado
-        })
-        acciones.escribirJson(nuevaTarea);
-        break;
+
 }

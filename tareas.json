@@ -1,16 +1,1 @@
-[{
-        "titulo": "Hacer calculadora",
-        "estado": "Terminada"
-    },
-
-    {
-        "titulo": "Armar aplicación de tareas",
-        "estado": "En progreso"
-    },
-    {
-
-        "titulo": "Estudiar el próximo módulo",
-        "estado": "Pendiente"
-    }
-
-]
+[{"titulo":"Hacer calculadora","estado":"Terminada"},{"titulo":"Armar aplicación de tareas","estado":"En progreso"},{"titulo":"Estudiar el próximo módulo","estado":"Pendiente"},{"titulo":"mate","estado":"pendiente"},{"titulo":"materia","estado":"pendiente"},{"titulo":"vava","estado":"pendiente"},{"titulo":"vak","estado":"pendiente"},{"titulo":"nsns","estado":"pendiente"},{"titulo":"nvnv","estado":"pendiente"},{"titulo":"pepe","estado":"pendiente"}]
